@@ -1,0 +1,6 @@
+header {
+    width: calc(100vw - 250px);
+    margin: 0 0 0 auto;
+    height: 100vh;
+    @include verticalCenter;
+}
