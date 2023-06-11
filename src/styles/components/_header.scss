@@ -14,6 +14,22 @@ header {
     align-items: center;
 }
 
+.left-hero {
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: headerAnim 1.5s forwards;
+
+    @keyframes headerAnim {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+}
+
 .right-hero img {
     width: 100%;
 }
