@@ -1,8 +1,10 @@
 import React from "react";
+import ContactBtn from "./ContactBtn";
 
 const Header = () => {
   return (
     <header>
+      <ContactBtn />
       <div className="hero">
         <div className="left-hero">
           <h1>Bonjour, bienvenue sur mon Portfolio !</h1>

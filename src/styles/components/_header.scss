@@ -3,8 +3,7 @@ header {
     margin: 0 0 0 auto;
     height: 100vh;
     @include verticalCenter;
-    background: rgb(0,212,255);
-    background: linear-gradient(80deg, rgba(0,212,255,1) 0%, rgba(215,0,207,1) 100%);
+    background: url("../../assets/images/wabe-bg.svg") center/cover;
     font-family: $font-1;
 }
 
@@ -15,12 +14,17 @@ header {
 }
 
 .left-hero {
+    color: aliceblue;
     text-align: center;
     margin: 0 auto;
     width: 85%;
     opacity: 0;
     transform: translateY(40px);
     animation: headerAnim 1.5s forwards;
+
+    h1{
+        font-size: 2.5rem;
+    }
 
     @keyframes headerAnim {
       to {

@@ -23,6 +23,10 @@ const Sidebar = () => {
           );
         })}
       </ul>
+      <div className="bar-info">
+        <div className="img-sidebar"></div>
+        <h1>Barthélémy David</h1>
+      </div>
     </div>
   );
 };

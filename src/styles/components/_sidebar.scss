@@ -2,36 +2,60 @@
     height: 100%;
     width: 250px;
     background-color: #2F4050;
-    position: absolute;
-}
-
-.SidebarList {
-    height: auto;
-    width: 100%;
-
-    #active {
-        background-color: black;
-    }
-
-    .row {
+    position: fixed;
+    border-right: 1px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    .SidebarList {
+        height: auto;
         width: 100%;
-        height: 60px;
-        @include verticalCenter;
-        color: white;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-        &:hover{
-            cursor: pointer;
-            background-color:  #293846;
+        
+        #active {
+            background-color: black;
         }
-
-        #icon{
-            flex: 30%;
-            display: grid;
-            place-items: center;
-        }
-        #title {
+        
+        .row {
+            width: 100%;
+            height: 60px;
+            @include verticalCenter;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+            &:hover{
+                cursor: pointer;
+                background-color:  #293846;
+            }
+            
+            #icon{
+                flex: 30%;
+                display: grid;
+                place-items: center;
+            }
+            #title {
             flex: 70%;
+          }
+        }
+    }
+    .bar-info {
+        border-top: 1px solid whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .img-sidebar {
+            background: url("../../../public/profil-picture.jpg") center/cover;
+            margin: 15px 0;
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
         }
     }
 }
