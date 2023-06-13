@@ -7,8 +7,8 @@ import About from "./pages/About";
 const App = () => {
   return (
     <div className="App">
-      <Sidebar />
       <BrowserRouter>
+      <Sidebar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />

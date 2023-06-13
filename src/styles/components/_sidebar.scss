@@ -12,7 +12,8 @@
         height: auto;
         width: 100%;
         
-        #active {
+        .active {
+            display: block;
             background-color: black;
         }
         
@@ -37,6 +38,14 @@
             flex: 70%;
           }
         }
+        
+        .menuderoulant {
+            display: none;
+        }
+
+        .portfolio-nav:hover .menuderoulant{
+            display: block;
+        }
     }
     .bar-info {
         border-top: 1px solid whitesmoke;
@@ -46,7 +55,7 @@
         margin-bottom: 15px;
 
         .img-sidebar {
-            background: url("../../../public/profil-picture.jpg") center/cover;
+            background: url("../../../public/logo.png") center/cover;
             margin: 15px 0;
             width: 125px;
             height: 125px;
