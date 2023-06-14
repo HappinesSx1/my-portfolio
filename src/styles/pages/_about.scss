@@ -6,4 +6,30 @@
     background: url("../../assets/images/wabe-bg.svg") center/cover;
     font-family: $font-1;
     color: white;
+    cursor: default;
+
+    span{
+        font-size: 2rem;
+    }
+
+    span:hover{
+        animation: gelatine 0.5s ease;
+    }
+
+    .languages {
+
+        .language {
+            img {
+                height: 150px;
+                width: 150px;
+            }
+        }
+    }
+}
+
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05)}
 }

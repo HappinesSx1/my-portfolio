@@ -5,12 +5,20 @@ header {
     @include verticalCenter;
     background: url("../../assets/images/wabe-bg.svg") center/cover;
     font-family: $font-1;
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
 }
 
 .hero{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .left-hero {
@@ -54,4 +62,8 @@ header {
 
 .right-hero img {
     width: 100%;
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
 }
