@@ -1,0 +1,12 @@
+.main {
+    width: calc(100vw - 250px);
+    margin: 0 0 0 auto;
+    height: 100vh;
+    @include verticalCenter;
+    flex-direction: column;
+    text-align: center;
+    background: url("../../assets/images/bg-portfolio.svg") center/cover;
+    font-family: $font-1;
+    color: white;
+    cursor: default;
+}

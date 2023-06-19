@@ -3,33 +3,77 @@
     margin: 0 0 0 auto;
     height: 100vh;
     @include verticalCenter;
-    background: url("../../assets/images/wabe-bg.svg") center/cover;
+    flex-direction: column;
+    text-align: center;
+    background: url("../../assets/images/bg-portfolio.svg") center/cover;
     font-family: $font-1;
     color: white;
     cursor: default;
 
-    span{
-        font-size: 2rem;
-    }
+    .content-containeur {
 
-    span:hover{
-        animation: gelatine 0.5s ease;
-    }
-
-    .languages {
-
-        .language {
-            img {
-                height: 150px;
-                width: 150px;
+        opacity: 0;
+        transform: translateY(40px);
+        animation: headerAnim 1.5s forwards;
+        
+        .title {
+            span{
+                font-size: 2rem;
+            }
+            
+            span:hover{
+                animation: gelatine 0.5s ease;
+            }
+        }
+        
+        .languages {
+            
+            display: flex;
+            
+            .language {
+                margin: 0 30px 3rem;
+                text-align: center;
+                height: 80px;
+                width: 80px;
+                
+                img {
+                    width: 100%;
+                    align-content: center;
+                }
+                
+                p{
+                    text-shadow: 1px 1px 2px #141416;
+                }
+            }
+        }
+        .experience-text {
+            width: 75%;
+            max-width: 900px;
+            margin: 0 auto 100px;
+        
+            h2 {
+            margin: 50px 0 25px;
             }
         }
     }
 }
 
 @keyframes gelatine {
-    from, to { transform: scale(1, 1); }
-    25% { transform: scale(0.9, 1.1); }
-    50% { transform: scale(1.1, 0.9); }
-    75% { transform: scale(0.95, 1.05)}
-}
+    from, to { transform: scale(1, 1);
+        color: white;
+    }
+    25% { transform: scale(0.9, 1.1);
+        color: $color-1;
+    }
+    50% { transform: scale(1.1, 0.9);
+        color: $color-1; }
+        75% { transform: scale(0.95, 1.05);
+            color: $color-1;}
+        }
+        
+        @keyframes headerAnim {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
