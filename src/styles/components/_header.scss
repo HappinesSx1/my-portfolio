@@ -36,10 +36,11 @@ header {
     }
 
     .about-btn {
-        color: $color-1;
+        color: $color-2;
         // text-decoration: none;
         font-size: 1.2rem;
         height: 24px;
+        z-index: 1;
         
         .arrow-btn {
             transition: all .2s ease-in-out;

@@ -71,9 +71,9 @@
             color: $color-1;}
         }
         
-        @keyframes headerAnim {
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
+@keyframes headerAnim {
+    to {
+        transform: translateY(0);
+        opacity: 1;
         }
+    }

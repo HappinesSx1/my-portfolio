@@ -1,12 +1,39 @@
-.main {
+.main-contact {
     width: calc(100vw - 250px);
     margin: 0 0 0 auto;
     height: 100vh;
     @include verticalCenter;
     flex-direction: column;
     text-align: center;
-    background: url("../../assets/images/bg-portfolio.svg") center/cover;
+    background: #F3F3F3;
     font-family: $font-1;
-    color: white;
+    color: $color-1;
     cursor: default;
+
+    .containeur {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .left-containeur{
+            .mail h1 a {
+                color: $white-1;
+                font-size: 1.5rem;
+                transition: 0.5s ease;
+        
+                &:hover {
+                    color: $color-2;
+                }
+            }
+       }
+       .right-containeur{
+           img {
+               width: auto;
+               height: 150px;
+           }
+       }
+    }
+
+
+
 }
