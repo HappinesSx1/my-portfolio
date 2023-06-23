@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 const ContactBtn = () => {
   return (

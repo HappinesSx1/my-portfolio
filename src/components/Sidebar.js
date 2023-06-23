@@ -1,13 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import ArticleIcon from "@mui/icons-material/Article";
 import InfoIcon from "@mui/icons-material/Info";
 
 const Sidebar = () => {
+  const location = useLocation();
+
   return (
-    <div className="Sidebar">
+    <div
+      className="Sidebar"
+      id={location.pathname === "/portfolio/1" ? "ciao" : ""}
+    >
       <ul className="SidebarList">
         <NavLink to="/" className={(nav) => (nav.isActive ? "active" : "")}>
           <li className="row">

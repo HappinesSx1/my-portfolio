@@ -47,6 +47,7 @@
             width: 250px;
             border: 1px solid $color-1;
             border-left: 1px solid #141416;
+            background-color:  #141416;
         }
 
         .portfolio-nav:hover .menuderoulant{
@@ -80,4 +81,8 @@
     @media screen and (max-width: 900px) {
         display: none;
     }
+}
+
+#ciao {
+    display: none;
 }
