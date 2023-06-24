@@ -11,7 +11,12 @@ const Sidebar = () => {
   return (
     <div
       className="Sidebar"
-      id={location.pathname === "/portfolio/1" ? "ciao" : ""}
+      id={
+        location.pathname === "/portfolio/1" ||
+        location.pathname === "/portfolio/2"
+          ? "ciao"
+          : ""
+      }
     >
       <ul className="SidebarList">
         <NavLink to="/" className={(nav) => (nav.isActive ? "active" : "")}>

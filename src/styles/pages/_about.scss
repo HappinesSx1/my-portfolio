@@ -5,7 +5,7 @@
     @include verticalCenter;
     flex-direction: column;
     text-align: center;
-    background: url("../../assets/images/bg-portfolio.svg") center/cover;
+    background: url("../../assets/images/blurry.svg") center/cover;
     font-family: $font-1;
     color: white;
     cursor: default;
@@ -19,11 +19,11 @@
         .title {
             span{
                 font-size: 2rem;
+                &:hover{
+                    animation: gelatine 0.5s ease;
+                }
             }
             
-            span:hover{
-                animation: gelatine 0.5s ease;
-            }
         }
         
         .languages {
@@ -63,12 +63,12 @@
         color: white;
     }
     25% { transform: scale(0.9, 1.1);
-        color: $color-1;
+        color: $color-2;
     }
     50% { transform: scale(1.1, 0.9);
-        color: $color-1; }
+        color: $color-2; }
         75% { transform: scale(0.95, 1.05);
-            color: $color-1;}
+            color: $color-2;}
         }
         
 @keyframes headerAnim {

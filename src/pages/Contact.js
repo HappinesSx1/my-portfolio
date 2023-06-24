@@ -1,7 +1,7 @@
 import React from "react";
 import ContactBtn from "../components/ContactBtn";
 import { NavLink } from "react-router-dom";
-import testgif from "../assets/images/mail2.gif";
+import testgif from "../assets/images/emailgif.gif";
 
 const Contact = () => {
   return (
@@ -11,9 +11,9 @@ const Contact = () => {
         <div className="left-containeur">
           <div className="mail">
             <p>
-              Avez-vous besoin d'un développer web (junior) ? <br />
-              Voulez-vous lancer un nouveau projet ? <br />
-              Vous pouvre me contacter à cette adresse mail :
+              Avez-vous besoin d'un développer web (junior)? <br />
+              Voulez-vous lancer un nouveau projet? <br />
+              Vous pouvez me contacter à cette adresse mail:
             </p>
             <h1>
               <NavLink to="mailto:david.b57970@gmail.com">

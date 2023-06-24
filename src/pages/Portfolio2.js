@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import ReturnBtn from "../components/ReturnBtn";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import p1Small from "../assets/images/projets/projet1-small-picture.png";
-import p1Large from "../assets/images/projets/projet1-big-picture.png";
+import p2Small from "../assets/images/projets/projet2-small-picture.png";
+import p2Large from "../assets/images/projets/projet2-big-picture.png";
 
-const Portfolio1 = () => {
+const Portfolio2 = () => {
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -27,13 +27,13 @@ const Portfolio1 = () => {
           </p>
         </div>
         <div className="containeur-right">
-          <img src={p1Small} alt="" onClick={toggleModal} />
+          <img src={p2Small} alt="" onClick={toggleModal} />
         </div>
         {modal && (
           <div className="modal">
             <div onClick={toggleModal} className="overlay"></div>
             <div className="modal-content">
-              <img src={p1Large} alt="" />
+              <img src={p2Large} alt="" />
               <button className="close-modal" onClick={toggleModal}>
                 FERMER
               </button>
@@ -45,4 +45,4 @@ const Portfolio1 = () => {
   );
 };
 
-export default Portfolio1;
+export default Portfolio2;

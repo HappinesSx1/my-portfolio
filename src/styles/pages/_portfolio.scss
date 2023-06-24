@@ -5,23 +5,44 @@
   @include verticalCenter;
   flex-direction: column;
   text-align: center;
-  background: url("../../assets/images/bg-portfolio.svg") center/cover;
+  background: url("../../assets/images/layered.svg") center/cover;
   font-family: $font-1;
   color: white;
   cursor: default;
 
   .containeur {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+
+    .title {
+
+      span{
+        font-size: 2rem;
+        &:hover{
+          animation: gelatine 0.5s ease;
+        }
+      }
+
+    }
+
     .projets {
+
+      margin-top: 100px;
+      @include verticalCenter;
+      gap: 30px;
+
       .projet {
         a {
-          background-image: url("../../assets/images/logo.png");
           position: relative;
           display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
-          width: 7rem;
-          height: 7rem;
+          width: 12rem;
+          height: 12rem;
           -webkit-box-align: center;
           -webkit-align-items: center;
           -ms-flex-align: center;
@@ -58,11 +79,20 @@
             }
         }
 
+        #p1 {
+          background-image: url("../../assets/images/projets/projet1-small-picture.png");
+        }
+
+        #p2 {
+          background-image: url("../../assets/images/projets/projet2-small-picture.png");
+        }
+
         span {
           position: relative;
           display: block;
           width: 100%;
           padding: 0.5rem;
+          font-size: 1.3rem;
           font-weight: 700;
           text-align: center;
           text-shadow: 0 1px 0 #110d17, 0 -1px 0 #110d17, 1px 0 0 #110d17,
@@ -74,3 +104,16 @@
     }
   }
 }
+
+@keyframes gelatine {
+  from, to { transform: scale(1, 1);
+      color: white;
+  }
+  25% { transform: scale(0.9, 1.1);
+      color: $color-2;
+  }
+  50% { transform: scale(1.1, 0.9);
+      color: $color-2; }
+      75% { transform: scale(0.95, 1.05);
+          color: $color-2;}
+      }
