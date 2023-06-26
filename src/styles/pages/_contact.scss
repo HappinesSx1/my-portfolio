@@ -23,6 +23,10 @@
         transform: translateY(40px);
         animation: headerAnim 1.5s forwards;
 
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+        }
+
         .left-containeur{
             .mail {
 
@@ -61,12 +65,16 @@
                width: 100%;
                max-width: 300px;
                height: 150px;
+               @media screen and (max-width: 900px) {
+                margin-top: 50px;
+                height: 100px;
+                }
+                @media screen and (max-width: 1200px) {
+                    margin-top: 50px;
+                }
            }
 
-           @media screen and (max-width: 900px) {
-            display: none;
         }
-       }
     }
 }
 

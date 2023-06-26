@@ -107,6 +107,7 @@
     @media screen and (max-width: 900px) {
         border-right: none;
         border-bottom: 1px solid $color-1;
+        z-index: 1;
     }
 }
 
