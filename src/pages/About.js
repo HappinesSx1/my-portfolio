@@ -36,7 +36,7 @@ const About = () => {
         <div className="experience-text">
           <h2>
             Mon principal domaine d'expertise est le Front end dveloppement
-            (côté clien du site web).
+            (côté client du site web).
           </h2>
 
           <p>
