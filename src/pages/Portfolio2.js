@@ -35,7 +35,7 @@ const Portfolio2 = () => {
             <div className="modal-content">
               <img src={p2Large} alt="" />
               <button className="close-modal" onClick={toggleModal}>
-                FERMER
+                X
               </button>
             </div>
           </div>

@@ -10,6 +10,12 @@
   color: white;
   cursor: default;
 
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    background: #141416;
+    height: 100%;
+  }
+
   .containeur {
 
     height: 100vh;
@@ -24,6 +30,10 @@
         &:hover{
           animation: gelatine 0.5s ease;
         }
+
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
       }
 
     }
@@ -33,6 +43,12 @@
       margin-top: 100px;
       @include verticalCenter;
       gap: 30px;
+
+      @media screen and (max-width: 900px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -40px;
+      }
 
       .projet {
         a {
