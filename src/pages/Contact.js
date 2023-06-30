@@ -13,7 +13,7 @@ const Contact = () => {
             <p>
               Avez-vous besoin d'un développer web (junior)? <br />
               Voulez-vous lancer un nouveau projet? <br />
-              Vous pouvez me contacter à cette adresse mail:
+              Vous pouvez me contacter à cette adresse mail ci-dessous:
             </p>
             <h1>
               <NavLink to="mailto:david.b57970@gmail.com">
