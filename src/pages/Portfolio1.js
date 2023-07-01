@@ -22,7 +22,13 @@ const Portfolio1 = () => {
       <ReturnBtn />
       <div className="project-containeur">
         <div className="containeur-left">
-          <p>
+          <p className="description">Technologies utilisée:</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+          <p className="code-btn">
             Voir le code <ArrowForwardIosIcon className="arrow-btn" />
           </p>
         </div>

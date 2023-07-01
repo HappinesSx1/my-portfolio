@@ -7,8 +7,10 @@ $font-1: "font-1", sans-serif;
 
 $color-1: #F4A949;
 $color-2: #41B3D3;
+$color-3: rgb(94 234 212);
+$black-1: #141416;
 $white-1: #F0F8FF;
-$gray-1: #90959A;
+$gray-1: #767a7e;
 
 @mixin verticalCenter {
     display: flex;
@@ -28,6 +30,10 @@ a{
 
 li{
     list-style-type: none;
+}
+
+body{
+    font-family: $font-1;
 }
 
 .App {

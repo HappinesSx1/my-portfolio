@@ -5,7 +5,7 @@ const ReturnBtn = () => {
   return (
     <div>
       <NavLink to="/portfolio" className="return">
-        <span>&lt;</span>
+        <span>&lt; EXIT</span>
       </NavLink>
       <NavLink
         className="github-link"

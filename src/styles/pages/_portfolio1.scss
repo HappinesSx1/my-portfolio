@@ -3,35 +3,55 @@ body.active-modal {
 }
 
 .project-containeur{
-    background-color: #141416;
+    background-color: $black-1;
     height: 100vh;
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 30% 70%;
     align-items: center;
     font-family: $font-1;
     
     .containeur-left {
-        display: flex;
-        justify-content: flex-end;
+        @include verticalCenter;
+        flex-direction: column;
         color: $white-1;
-        margin-left: 2rem;
-        cursor: pointer;
-        transition: all .3s ease;
-            
-            .arrow-btn {
-                transition: all .3s ease;
-                height: 14px;
+
+            .description {
+                font-size: 1.15rem;
             }
 
-            &:hover .arrow-btn {
-                transform: rotate(90deg);
-                color: $color-2;
+            ul {
+                font-size: 0.75rem;
+                display: flex;
+                margin-top: 30px;
+
+                li {
+                    background-color: rgba(45,212,191,.1);
+                    border-radius: 15px;
+                    font-weight: 500;
+                    // color: $color-1;
+                    color : $color-3;
+                    margin-right: 0.375rem;
+                    padding: 0.25rem 0.75rem;
+                }
             }
+
+            .code-btn {
+
+                margin-top: 100px;
+                cursor: pointer;
+                transition: all .3s ease;
+
+                .arrow-btn {
+                    transition: all .3s ease;
+                    height: 14px;
+                }
+                &:hover .arrow-btn {
+                    transform: rotate(90deg);
+                }
+            }
+            
+
     
-            &:hover {
-                transform: scale(1.05);
-                color: $color-2;
-            }
     }
 
 
@@ -61,13 +81,6 @@ body.active-modal {
 
             
             .modal-content {
-                // position: absolute;
-                // top: 0px;
-                // bottom: 0px;
-                // left: 120px;
-                // right: 120px;
-                // text-align: center;
-                // z-index: 1;
                 
                 img {
                     vertical-align: middle;
@@ -77,22 +90,17 @@ body.active-modal {
             }
             }
             .close-modal {
-             position: absolute;
+             position: fixed;
              top: 10px;
              right: 30px;
              padding: 8px 22px;
-             background: none;
+             filter: contrast(200%);
+             background: rgba(0, 0, 0, 0.3);
              color: $white-1;
-             border: 2px solid $white-1;
+             border: none;
              font-size: 1.15rem;
              font-weight: 800;
-             border-radius: 6px;
              cursor: pointer;
-
-             &:hover {
-                background-color: white;
-                color: #2F4050;
-            }
           }
     }
 }
