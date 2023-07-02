@@ -40,6 +40,10 @@ body.active-modal {
                 margin-top: 100px;
                 cursor: pointer;
                 transition: all .3s ease;
+                
+                a {
+                    color: $white-1;
+                }
 
                 .arrow-btn {
                     transition: all .3s ease;
@@ -63,7 +67,11 @@ body.active-modal {
             width: 90%;
             margin: 0 auto;
             box-shadow: 12px 12px 100px $white-1, -12px -12px 100px $white-1;
-            cursor: pointer;
+            cursor: zoom-in;
+        }
+
+        #no-modal {
+            cursor: auto;
         }
 
     }

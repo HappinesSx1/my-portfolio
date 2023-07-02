@@ -13,7 +13,8 @@ const Sidebar = () => {
       className="Sidebar"
       id={
         location.pathname === "/portfolio/1" ||
-        location.pathname === "/portfolio/2"
+        location.pathname === "/portfolio/2" ||
+        location.pathname === "/portfolio/3"
           ? "ciao"
           : ""
       }
@@ -47,6 +48,12 @@ const Sidebar = () => {
                 className={(nav) => (nav.isActive ? "active" : "")}
               >
                 <li class="row">Porjet 2</li>
+              </NavLink>
+              <NavLink
+                to="/portfolio/3"
+                className={(nav) => (nav.isActive ? "active" : "")}
+              >
+                <li class="row">Porjet 3</li>
               </NavLink>
             </ul>
           </div>

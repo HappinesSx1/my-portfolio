@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import ReturnBtn from "../components/ReturnBtn";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import p2Small from "../assets/images/projets/projet2-small-picture.png";
-import p2Large from "../assets/images/projets/projet2-big-picture.png";
+import p3Small from "../assets/images/projets/projet3-small-picture.png";
 import { NavLink } from "react-router-dom";
 
-const Portfolio2 = () => {
+const Portfolio3 = () => {
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -25,13 +24,13 @@ const Portfolio2 = () => {
         <div className="containeur-left">
           <p className="description">Technologies utilisée:</p>
           <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
+            <li>REACT</li>
+            <li>SASS</li>
+            <li>REDUX</li>
           </ul>
           <p className="code-btn">
             <NavLink
-              to="https://github.com/HappinesSx1/projet2-gaming-campus"
+              to="https://github.com/HappinesSx1/crypto-view"
               target="_blank"
             >
               Voir le code <ArrowForwardIosIcon className="arrow-btn" />
@@ -39,9 +38,9 @@ const Portfolio2 = () => {
           </p>
         </div>
         <div className="containeur-right">
-          <img src={p2Small} alt="" onClick={toggleModal} />
+          <img src={p3Small} alt="portoflio3" id="no-modal" />
         </div>
-        {modal && (
+        {/* {modal && (
           <div className="modal">
             <div onClick={toggleModal} className="overlay"></div>
             <div className="modal-content">
@@ -51,10 +50,10 @@ const Portfolio2 = () => {
               </button>
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </>
   );
 };
 
-export default Portfolio2;
+export default Portfolio3;

@@ -3,6 +3,7 @@ import ReturnBtn from "../components/ReturnBtn";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import p1Small from "../assets/images/projets/projet1-small-picture.png";
 import p1Large from "../assets/images/projets/projet1-big-picture.png";
+import { NavLink } from "react-router-dom";
 
 const Portfolio1 = () => {
   const [modal, setModal] = useState(false);
@@ -25,11 +26,16 @@ const Portfolio1 = () => {
           <p className="description">Technologies utilisée:</p>
           <ul>
             <li>HTML</li>
-            <li>CSS</li>
+            <li>SCSS</li>
             <li>Javascript</li>
           </ul>
           <p className="code-btn">
-            Voir le code <ArrowForwardIosIcon className="arrow-btn" />
+            <NavLink
+              to="https://github.com/HappinesSx1/projet1-resto.git"
+              target="_blank"
+            >
+              Voir le code <ArrowForwardIosIcon className="arrow-btn" />
+            </NavLink>
           </p>
         </div>
         <div className="containeur-right">

@@ -36,6 +36,11 @@ const Portfolio = () => {
               <span>PROJET 2</span>
             </NavLink>
           </li>
+          <li className="projet">
+            <NavLink to="/portfolio/3" id="p3">
+              <span>PROJET 3</span>
+            </NavLink>
+          </li>
         </ul>
       </div>
     </div>
