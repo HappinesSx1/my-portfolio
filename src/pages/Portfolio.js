@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { projectsData } from "../data/projetcsData";
+import Card from "../components/Card";
 
 const Portfolio = () => {
   return (
@@ -26,7 +27,12 @@ const Portfolio = () => {
           <span>:</span>
         </div>
         <ul className="projets">
-          <li className="projet">
+          {projectsData.map((carte) => (
+            <li key={carte.id} className="projet">
+              <Card carte={carte} />
+            </li>
+          ))}
+          {/* <li className="projet">
             <NavLink to="/portfolio/1" id="p1">
               <span>PROJET 1</span>
             </NavLink>
@@ -40,7 +46,7 @@ const Portfolio = () => {
             <NavLink to="/portfolio/3" id="p3">
               <span>PROJET 3</span>
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

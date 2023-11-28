@@ -1,0 +1,35 @@
+[
+    {
+        "id" : "1",
+        "tags" : [
+            "HTML",
+            "SASS",
+            "Javascript"
+        ],
+        "lien" : "https://github.com/HappinesSx1/projet1-resto.git",
+        "smallPicture" : "./projets/projet1-small-picture.png",
+        "bigPicture" : "./projets/projet1-big-picture.png"
+    },
+    {
+        "id" : "2",
+        "tags" : [
+            "HTML",
+            "CSS",
+            "Javascript"
+        ],
+        "lien" : "https://github.com/HappinesSx1/projet2-gaming-campus",
+        "smallPicture" : "../assets/images/projets/projet2-big-picture.png",
+        "bigPicture" : "../assets/images/projets/projet2-big-picture.png"
+    },
+    {
+        "id" : "3",
+        "tags" : [
+            "REACT",
+            "SASS",
+            "Redux"
+        ],
+        "lien" : "https://github.com/HappinesSx1/crypto-view",
+        "smallPicture" : "../assets/images/projets/projet3-small-picture.png",
+        "bigPicture" :  ""
+    }
+]

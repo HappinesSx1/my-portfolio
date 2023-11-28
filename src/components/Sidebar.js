@@ -4,17 +4,20 @@ import HomeIcon from "@mui/icons-material/Home";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import ArticleIcon from "@mui/icons-material/Article";
 import InfoIcon from "@mui/icons-material/Info";
+import { projectsData } from "../data/projetcsData";
 
 const Sidebar = () => {
   const location = useLocation();
+
+  const pathSegments = location.pathname.split("/");
+  const lastSegment = parseInt(pathSegments[pathSegments.length - 1]);
 
   return (
     <div
       className="Sidebar"
       id={
-        location.pathname === "/portfolio/1" ||
-        location.pathname === "/portfolio/2" ||
-        location.pathname === "/portfolio/3"
+        lastSegment &&
+        location.pathname === `/portfolio/${projectsData[lastSegment - 1].id}`
           ? "ciao"
           : ""
       }
@@ -37,24 +40,15 @@ const Sidebar = () => {
               <div id="title">Portfolio</div>
             </li>
             <ul class="menuderoulant">
-              <NavLink
-                to="/portfolio/1"
-                className={(nav) => (nav.isActive ? "active" : "")}
-              >
-                <li class="row">Porjet 1</li>
-              </NavLink>
-              <NavLink
-                to="/portfolio/2"
-                className={(nav) => (nav.isActive ? "active" : "")}
-              >
-                <li class="row">Porjet 2</li>
-              </NavLink>
-              <NavLink
-                to="/portfolio/3"
-                className={(nav) => (nav.isActive ? "active" : "")}
-              >
-                <li class="row">Porjet 3</li>
-              </NavLink>
+              {projectsData.map((slide, index) => (
+                <NavLink
+                  to={`/portfolio/${slide.id}`}
+                  className={(nav) => (nav.isActive ? "active" : "")}
+                  key={index}
+                >
+                  <li class="row">{`Projet ${slide.id}`}</li>
+                </NavLink>
+              ))}
             </ul>
           </div>
         </NavLink>

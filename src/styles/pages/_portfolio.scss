@@ -44,10 +44,12 @@
       @include verticalCenter;
       gap: 30px;
 
+
       @media screen and (max-width: 900px) {
         display: flex;
         flex-wrap: wrap;
         margin-top: -40px;
+        background: $black-1;
       }
 
       .projet {
@@ -96,15 +98,18 @@
         }
 
         #p1 {
-          background-image: url("../../assets/images/projets/projet1-small-picture.png");
+          background-image: url("../../../public/img/projet1-small-picture.png");
         }
 
         #p2 {
-          background-image: url("../../assets/images/projets/projet2-small-picture.png");
+          background-image: url("../../../public/img/projet2-small-picture.png");
         }
 
         #p3 {
-          background-image: url("../../assets/images/projets/projet3-small-picture.png");
+          background-image: url("../../../public/img/projet3-small-picture.png");
+        }
+        #p4 {
+          background-image: url("../../../public/img/projet4-small-picture.png");
         }
 
         span {
