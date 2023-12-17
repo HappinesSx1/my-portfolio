@@ -2,17 +2,17 @@
     position: absolute;
     top: 25px;
     right: 50px;
-    border: 2px solid white;
+    border: 2px solid $white-1;
     border-radius: 6px;
     padding: 8px 22px;
     animation: 5s ease-in;
-    color: white;
+    color: $white-1;
     transition: all .3s ease-in-out;
 
     
     &:hover {
-        background-color: white;
-        color: #2F4050;
+        background-color: $white-1;
+        color: $black-1;
     }
 
     @media screen and (max-width: 900px) {
@@ -21,9 +21,9 @@
 }
 
 .github-link{
-    position: absolute;
+    position: fixed;
     bottom: 25px;
-    right: 50px;
+    right: 25px;
     img {
         height: 35px;
         width: 35px;

@@ -12,7 +12,7 @@
 
     @media screen and (max-width: 900px) {
         width: 100%;
-        background: #141416;
+        background: $black-1;
     }
 
     .containeur {
@@ -74,10 +74,10 @@
                     margin-top: 50px;
                 }
            }
-
         }
     }
 }
+
 
 @keyframes headerAnim {
     to {

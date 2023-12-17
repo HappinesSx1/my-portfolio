@@ -7,7 +7,7 @@
   text-align: center;
   background: url("../../assets/images/layered.svg") center/cover;
   font-family: $font-1;
-  color: white;
+  color: $white-1;
   cursor: default;
 
   @media screen and (max-width: 900px) {
@@ -21,7 +21,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-top: 250px;
+    margin-top: 175px;
 
     .title {
 
@@ -39,17 +39,29 @@
     }
 
     .projets {
-
       margin-top: 100px;
-      @include verticalCenter;
+      // display: grid;
+      // grid-template-columns: repeat(4, auto);
+      // grid-template-rows: repeat(2, 1fr);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
       gap: 30px;
+      align-items: center;
 
 
       @media screen and (max-width: 900px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: -40px;
+        // display: flex;
+        // flex-wrap: wrap;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: repeat(2, 1fr);
+        max-width: 85%;
+        margin: -40px auto 0;
         background: $black-1;
+      }
+      @media screen and (max-width: 400px) {
+        margin-top: 80px;
       }
 
       .projet {
@@ -132,7 +144,7 @@
 
 @keyframes gelatine {
   from, to { transform: scale(1, 1);
-      color: white;
+      color: $white-1;
   }
   25% { transform: scale(0.9, 1.1);
       color: $color-2;

@@ -10,9 +10,24 @@ body.active-modal {
     align-items: center;
     font-family: $font-1;
 
+    .zoom-here {
+        height: 150px;
+        position: absolute;
+        color: $color-3;
+        font-weight: 700;
+        font-size: 1.2rem;
+        left: 22%;
+        top: 180px;
+        transform: rotate(25deg);
+            @media screen and (max-width: 1250px) {
+                display: none;
+            }
+    }
+
     @media screen and (max-width: 900px) {
         grid-template-columns: 1fr;
       }
+
     
     .containeur-left {
         @include verticalCenter;
@@ -22,6 +37,14 @@ body.active-modal {
             .description {
                 font-size: 1.15rem;
                 text-align: center;
+            }
+
+            .description-p {
+                font-size: 0.9rem;
+                text-align: center;
+                margin: 15px 0 30px;
+                max-width: 70%;
+                color: $color-3;
             }
 
             ul {
@@ -80,6 +103,10 @@ body.active-modal {
             margin: 0 auto;
             box-shadow: 12px 12px 100px $white-1, -12px -12px 100px $white-1;
             cursor: zoom-in;
+
+            @media screen and (max-width: 900px) {
+                box-shadow: 6px 6px 50px $white-1, -6px -6px 50px $white-1;
+            }
         }
 
         #no-modal {
@@ -88,6 +115,9 @@ body.active-modal {
 
         @media screen and (max-width: 900px) {
             margin-top: -150px;
+          }
+        @media screen and (max-width: 440px) {
+            display: none;
           }
 
     }

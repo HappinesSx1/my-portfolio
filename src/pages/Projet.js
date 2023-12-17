@@ -25,8 +25,16 @@ const Projet = () => {
     <>
       <ReturnBtn />
       <div className="project-containeur">
+        {dataDetails.bigPicture === null ? (
+          ""
+        ) : (
+          <span className="zoom-here">Zoom here →</span>
+        )}
         <div className="containeur-left">
-          <p className="description">Technologies utilisée:</p>
+          <h2 className="description">Description:</h2>
+          <p className="description-p">{dataDetails.description}</p>
+
+          <h2 className="description">Technologies utilisée:</h2>
           <ul>
             {dataDetails.tags.map((tag, index) => (
               <li key={index}>{tag}</li>

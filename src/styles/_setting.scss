@@ -9,8 +9,10 @@ $color-1: #F4A949;
 $color-2: #41B3D3;
 $color-3: rgb(94 234 212);
 $black-1: #141416;
+$active-1: #969696;
 $white-1: #F0F8FF;
 $gray-1: #767a7e;
+$hover-sidebar: #293846;
 
 @mixin verticalCenter {
     display: flex;
@@ -22,6 +24,9 @@ $gray-1: #767a7e;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
 }
 
 a{
@@ -39,4 +44,12 @@ body{
 .App {
     width: 100vw;
     height: 100vh;
+}
+
+.section-h2 {
+    display: inline-block;
+    margin-left: 50px;
+    border-top: 4px solid $white-1;
+    padding-top: 6px;
+    font-size: 1.3rem;
 }

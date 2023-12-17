@@ -4,17 +4,15 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
-import Sidebar from "./components/Sidebar";
 import Projet from "./pages/Projet";
 
 const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        <Sidebar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/my-portoflio" element={<Home />} />
+          {/* <Route path="/my-portoflio" element={<Home />} /> */}
           <Route path="/home" element={<Home />} />
           <Route path="/a-propos" element={<About />} />
           <Route path="/contact" element={<Contact />} />

@@ -9,27 +9,27 @@ import gitlogo from "../assets/images/logo-git.svg";
 const Languages = () => {
   return (
     <div className="languages">
-      <div className="language">
+      <div className="language" id="delai-one">
         <img src={javascriptlogo} alt="javascript logo" />
         <p>Javascript</p>
       </div>
-      <div className="language">
+      <div className="language" id="delai-two">
         <img src={csslogo} alt="css logo" />
         <p>CSS3</p>
       </div>
-      <div className="language">
+      <div className="language" id="delai-three">
         <img src={htmllogo} alt="" />
         <p>HTML5</p>
       </div>
-      <div className="language">
+      <div className="language" id="delai-four">
         <img src={sasslogo} alt="" />
         <p>SASS</p>
       </div>
-      <div className="language">
+      <div className="language" id="delai-five">
         <img src={nodelogo} alt="" />
         <p>NODEJS</p>
       </div>
-      <div className="language">
+      <div className="language" id="delai-six">
         <img src={gitlogo} alt="" />
         <p>GIT</p>
       </div>
