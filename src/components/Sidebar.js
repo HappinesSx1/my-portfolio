@@ -23,7 +23,10 @@ const Sidebar = () => {
       }
     >
       <ul className="SidebarList">
-        <NavLink to="/" className={(nav) => (nav.isActive ? "active" : "")}>
+        <NavLink
+          to="/my-portfolio"
+          className={(nav) => (nav.isActive ? "active" : "")}
+        >
           <li className="row">
             <div id="icon">
               <HomeIcon />

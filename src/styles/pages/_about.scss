@@ -101,6 +101,12 @@
             #delai-six {
                 animation-delay: 0.6s;
             }
+            #delai-seven {
+                animation-delay: 0.7s;
+            }
+            #delai-height {
+                animation-delay: 0.8s;
+            }
 
         }
         .experience-text {
@@ -164,61 +170,33 @@
         
         .formations {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-around;
 
-            .formation {
-                box-shadow: rgba(255, 255, 255, 0.795) 0px 4px 4px 0px;
-                // box-shadow: rgba(244, 169, 73, 0.1) 0px 4px 4px 0px;
-                border-radius: 8px;
-                color: $white-1;
-                width: 400px;
-                padding: 30px;
-                margin: 50px 0 0 0;
-            }
-
-            .right-formation {
-
-                .planet {
-                    position: relative;
-
-                    .planet-circle {
-                        background-color: $color-1; 
-                        top: 100px; 
-                        right: 200px; 
-                        height: 320px;
-                        width: 320px;
-                        border-radius: 50%;
-                    }
-                    .planet-anneau {
-                        transform: skewX(-50deg);
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        height: 320px;
-                        width: 320px;
-                        border: 10px solid rgba(255, 255, 255, 0.2);
-                        pointer-events: none;
-                        border-radius: 50%;
-                    }
+            .left-formation {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                
+                .formation {
+                    box-shadow: rgba(255, 255, 255, 0.795) 0px 4px 4px 0px;
+                    // box-shadow: rgba(244, 169, 73, 0.1) 0px 4px 4px 0px;
+                    border-radius: 8px;
+                    color: $white-1;
+                    width: 400px;
+                    padding: 30px;
+                    // margin: 50px 0 0 0;
                 }
+
             }
+            .right-formation {
+                width: 40%;
+            }
+
         }
     }
 }
-    
-    @keyframes gelatine {
-        from, to { transform: scale(1, 1);
-            color: $white-1;
-    }
-    25% { transform: scale(0.9, 1.1);
-        color: $color-2;
-    }
-    50% { transform: scale(1.1, 0.9);
-        color: $color-2; }
-        75% { transform: scale(0.95, 1.05);
-            color: $color-2;}
-        }
         
 @keyframes headerAnim {
     to {

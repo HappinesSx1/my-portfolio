@@ -35,21 +35,6 @@ const Portfolio = () => {
                 <Card carte={carte} />
               </li>
             ))}
-            {/* <li className="projet">
-            <NavLink to="/portfolio/1" id="p1">
-            <span>PROJET 1</span>
-            </NavLink>
-            </li>
-            <li className="projet">
-            <NavLink to="/portfolio/2" id="p2">
-            <span>PROJET 2</span>
-            </NavLink>
-            </li>
-            <li className="projet">
-            <NavLink to="/portfolio/3" id="p3">
-            <span>PROJET 3</span>
-            </NavLink>
-          </li> */}
           </ul>
         </div>
       </div>

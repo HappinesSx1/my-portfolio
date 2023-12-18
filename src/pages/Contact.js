@@ -1,15 +1,15 @@
 import React from "react";
-import ContactBtn from "../components/ContactBtn";
 import { NavLink } from "react-router-dom";
-import testgif from "../assets/images/emailgif.gif";
 import Sidebar from "../components/Sidebar";
+import emailpicture from "../assets/images/section-contact/Emails-bro.svg";
+import GithubBtn from "../components/GithubBtn";
 
 const Contact = () => {
   return (
     <>
       <Sidebar />
       <div className="main-contact">
-        <ContactBtn />
+        <GithubBtn />
         <div className="containeur">
           <div className="left-containeur">
             <div className="mail">
@@ -26,7 +26,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="right-containeur">
-            <img src={testgif} alt="" />
+            <img src={emailpicture} alt="" />
           </div>
         </div>
       </div>

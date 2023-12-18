@@ -7,11 +7,6 @@ const ReturnBtn = () => {
       <NavLink to="/portfolio" className="return">
         <span>&lt; EXIT</span>
       </NavLink>
-      <NavLink
-        className="github-link"
-        to="https://github.com/HappinesSx1"
-        target="_blank"
-      ></NavLink>
     </div>
   );
 };

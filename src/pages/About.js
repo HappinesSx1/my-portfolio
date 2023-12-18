@@ -4,6 +4,8 @@ import Languages from "../components/Languages";
 import Sidebar from "../components/Sidebar";
 import img1 from "../assets/images/section-about/landing_page.svg";
 import img2 from "../assets/images/section-about/knowledge.svg";
+import img3 from "../assets/images/section-about/Research paper-rafiki.svg";
+import GithubBtn from "../components/GithubBtn";
 
 const About = () => {
   return (
@@ -11,6 +13,7 @@ const About = () => {
       <Sidebar />
       <div className="main">
         <ContactBtn />
+        <GithubBtn />
         <div className="content-containeur">
           <div className="title">
             <span>S</span>
@@ -91,11 +94,7 @@ const About = () => {
                 </div>
               </div>
               <div className="right-formation">
-                <div className="planet">
-                  <div className="planet-circle"></div>
-                  <div className="planet-anneau"></div>
-                  <div className="planet-anneau"></div>
-                </div>
+                <img src={img3} alt="" />
               </div>
             </div>
           </div>

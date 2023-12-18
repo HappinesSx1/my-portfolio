@@ -5,6 +5,8 @@ import htmllogo from "../assets/images/logo-html5.svg";
 import sasslogo from "../assets/images/logo-sass.svg";
 import nodelogo from "../assets/images/logo-node.svg";
 import gitlogo from "../assets/images/logo-git.svg";
+import reactlogo from "../assets/images/react-logo.svg";
+import reduxlogo from "../assets/images/logo-redux.svg";
 
 const Languages = () => {
   return (
@@ -32,6 +34,14 @@ const Languages = () => {
       <div className="language" id="delai-six">
         <img src={gitlogo} alt="" />
         <p>GIT</p>
+      </div>
+      <div className="language" id="delai-seven">
+        <img src={reactlogo} alt="" />
+        <p>REACT</p>
+      </div>
+      <div className="language" id="delai-height">
+        <img src={reduxlogo} alt="" />
+        <p>REDUX</p>
       </div>
     </div>
   );
