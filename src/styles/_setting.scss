@@ -52,4 +52,8 @@ body{
     border-top: 4px solid $white-1;
     padding-top: 6px;
     font-size: 1.3rem;
+
+    @media screen and (max-width: 1260px) {
+        margin: 0;
+    }
 }

@@ -25,16 +25,16 @@ const Projet = () => {
     <>
       <ReturnBtn />
       <div className="project-containeur">
-        {dataDetails.bigPicture === null ? (
+        {/* {dataDetails.bigPicture === null ? (
           ""
         ) : (
           <span className="zoom-here">Zoom here →</span>
-        )}
+        )} */}
         <div className="containeur-left">
           <h2 className="description">Description:</h2>
           <p className="description-p">{dataDetails.description}</p>
 
-          <h2 className="description">Technologies utilisée:</h2>
+          <h2 className="description">Technologies utilisées:</h2>
           <ul>
             {dataDetails.tags.map((tag, index) => (
               <li key={index}>{tag}</li>
@@ -47,6 +47,11 @@ const Projet = () => {
           </p>
         </div>
         <div className="containeur-right">
+          {dataDetails.bigPicture === null ? (
+            ""
+          ) : (
+            <span className="zoom-here">Zoom here →</span>
+          )}
           <img
             src={`${process.env.PUBLIC_URL}/img${dataDetails.smallPicture}`}
             alt="test"

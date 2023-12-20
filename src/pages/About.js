@@ -2,10 +2,9 @@ import React from "react";
 import ContactBtn from "../components/ContactBtn";
 import Languages from "../components/Languages";
 import Sidebar from "../components/Sidebar";
-import img1 from "../assets/images/section-about/landing_page.svg";
-import img2 from "../assets/images/section-about/knowledge.svg";
-import img3 from "../assets/images/section-about/Research paper-rafiki.svg";
 import GithubBtn from "../components/GithubBtn";
+import Services from "../components/Services";
+import Formations from "../components/Formations";
 
 const About = () => {
   return (
@@ -43,6 +42,15 @@ const About = () => {
             </h2>
 
             <p>
+              Je m'appelle David BARTHELEMY, je suis un développeur front basé
+              proche de Metz, en Moselle (57). Déjà plusieurs années que je suis
+              investi dans le développement web, d'abord en parallèle de mes
+              études puis avec une formation openclassroom. Découvrez tous les
+              projets sur lesquels j'ai travaillé dans la section:
+              <span> Portfolio</span>.
+            </p>
+
+            <p>
               HTML, CSS, JS, SASS, construction de petites et moyennes
               applications web avec React, fonctionnalités, animations, et
               codage de mises en page interactives. J'ai également quelques
@@ -52,53 +60,8 @@ const About = () => {
 
           <Languages />
         </div>
-        <section className="more-about-container">
-          <div className="more-about">
-            <h2 className="section-h2">Mes services</h2>
-            <div className="talents">
-              <div className="talent-container">
-                <div className="talent">
-                  <img src={img1} alt="" />
-                  <h3>Applications</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Impedit, natus! Eaque modi sunt iste voluptate.
-                  </p>
-                </div>
-              </div>
-              <div className="talent-container">
-                <div className="talent">
-                  <img src={img2} alt="" />
-                  <h3>Optimisations</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cupiditate omnis et totam ea aperiam corporis?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="formations-container">
-          <div className="formations-section">
-            <h2 className="section-h2">Mes formations</h2>
-            <div className="formations">
-              <div className="left-formation">
-                <div className="formation">
-                  <h4>Salut</h4>
-                  <h5>2015-2018</h5>
-                </div>
-                <div className="formation">
-                  <h4>Salut</h4>
-                  <h5>2015-2018</h5>
-                </div>
-              </div>
-              <div className="right-formation">
-                <img src={img3} alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
+        <Services />
+        <Formations />
       </div>
     </>
   );

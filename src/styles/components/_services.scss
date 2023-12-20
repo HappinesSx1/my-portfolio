@@ -1,0 +1,126 @@
+.more-about-container{
+    width: calc(100vw - 250px);
+
+    .more-about {
+        background-color: $black-1;
+        width: 85%;
+        margin: 100px auto 0 0;
+        padding: 15px;
+        border-radius: 0 15px 15px 0;
+        
+        .talents{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 50px 0;
+            
+            .talent-container{
+                background-color: $color-1;
+                height: 340px;
+                
+                .talent {
+                    padding: 10px 22px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 320px;
+                    margin: 22px;
+                    
+                    img {
+                        height: 96px;
+                        margin-bottom: 15px;
+
+                        @media screen and (max-width: 1260px) {
+                            height: 50%;
+                            width: 40%;
+                        }
+                        @media screen and (max-width: 700px) {
+                            width: 70%;
+                            height: 40%;
+
+                        }
+                        @media screen and (max-width: 400px) {
+                            height: 35%;
+                        }
+                    }
+                    .talent-description {
+                        h3 {
+                            font-size: 1.5rem;
+                            margin-bottom: 15px;
+                        }
+                        
+                        p {
+                            margin-left: 10px;
+                        }
+                        @media screen and (max-width: 1260px) {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 25px;
+                            width: 60%;
+                        }
+                        @media screen and (max-width: 700px) {
+                            width: 100%;
+                            height: 60%;
+                            gap: 10px;
+                        }
+                        
+                        @media screen and (max-width: 400px) {
+                            height: 65%;
+                            gap: 5px;
+                        }
+                    }
+
+                    @media screen and (max-width: 1260px) {
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        flex-direction: row;
+                        gap: 30px;
+                        width: 100%;
+                        height: 100%;
+                        margin: 0;
+                    }
+                    @media screen and (max-width: 700px) {
+                        flex-direction: column;
+                        width: 100%;
+                        height: 100%;
+                        padding: 10px 22px;
+                        gap: 25px;
+                        justify-content: start;
+                    }
+                    @media screen and (max-width: 400px) {
+                        flex-direction: column;
+                        width: 100%;
+                        height: 100%;
+                        padding: 10px 22px;
+                        gap: 5px;
+                        justify-content: start;
+                    }
+                }
+            }
+            @media screen and (max-width: 1260px) {
+                flex-direction: column;
+                align-items: normal;
+                gap: 50px;
+            }
+        }
+        @media screen and (max-width: 1260px) {
+            padding: 15px 50px;
+        }
+        @media screen and (max-width: 900px) {
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 700px) {
+            max-width: 450px;
+        }
+        @media screen and (max-width: 450px) {
+            padding: 0;
+        }
+    }
+    @media screen and (max-width: 1260px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 900px) {
+        margin-top: 50px;
+    }
+}

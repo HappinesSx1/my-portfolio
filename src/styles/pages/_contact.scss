@@ -1,7 +1,7 @@
 .main-contact {
     width: calc(100vw - 250px);
     margin: 0 0 0 auto;
-    height: 100vh;
+    height: 100%;
     @include verticalCenter;
     flex-direction: column;
     text-align: center;
@@ -9,6 +9,11 @@
     background: url("../../assets/images/bg-portfolio.svg") center/cover;
     color: $color-1;
     cursor: default;
+
+    @media screen and (max-width: 1200px) {
+        height: auto;
+        min-height: 100%;      
+    }
 
     @media screen and (max-width: 900px) {
         width: 100%;
@@ -25,6 +30,15 @@
 
         @media screen and (max-width: 1200px) {
             flex-direction: column;
+            margin-top: 150px;
+            height: 100%;
+        }
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+        @media screen and (max-width: 400px) {
             margin-top: 75px;
         }
 
@@ -40,7 +54,7 @@
                     margin: 0 auto;
 
                     @media screen and (max-width: 900px) {
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                         text-align: justify;
                         padding: 0 20px;
                     }
@@ -57,23 +71,46 @@
                         &:hover {
                             color: $color-2;
                         }
+                        @media screen and (max-width: 400px) {
+                            font-size: 1.3rem;
+                        }
                     }
+                    @media screen and (max-width: 400px) {
+                        word-wrap: break-word;
+                        width: 90%;
+                        margin: 50px auto 0;
+                    }
+                }
+                @media screen and (max-width: 400px) {
+                    width: 100%;
                 }
         
             }
+            @media screen and (max-width: 900px) {
+                width: 80%;
+            }
+            @media screen and (max-width: 400px) {
+                width: 100%;
+            }
        }
        .right-containeur{
-        width: 40%;
+            width: 40%;
            img {
                width: 100%;
+               @media screen and (max-width: 1200px) {
+                   margin-top: 10px;
+               }
                @media screen and (max-width: 900px) {
-                margin-top: 50px;
-                height: 100px;
-                }
-                @media screen and (max-width: 1200px) {
-                    margin-top: 50px;
+                    margin-top: 10px;
+                    height: 400px;
                 }
            }
+           @media screen and (max-width: 1200px) {
+                width: 60%;
+            }
+            @media screen and (max-width: 400px) {
+                display: none;
+            }
         }
     }
 }

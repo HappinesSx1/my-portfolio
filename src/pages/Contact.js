@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="left-containeur">
             <div className="mail">
               <p>
-                Avez-vous besoin d'un développer web (junior)? <br />
+                Avez-vous besoin d'un développer web? <br />
                 Voulez-vous lancer un nouveau projet? <br />
                 Vous pouvez me contacter à cette adresse mail ci-dessous:
               </p>

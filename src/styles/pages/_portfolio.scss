@@ -12,8 +12,6 @@
 
   @media screen and (max-width: 900px) {
     width: 100%;
-    background: #141416;
-    height: 100%;
   }
 
   .containeur {
@@ -22,6 +20,11 @@
     display: flex;
     flex-direction: column;
     margin-top: 175px;
+
+    @media screen and (max-width: 900px) {
+      height: 100%;
+      background: #141416;
+    }
 
     .title {
 

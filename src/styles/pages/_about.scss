@@ -21,10 +21,6 @@
             @include verticalCenter;
             flex-direction: column;
         }
-
-        @media screen and (max-width: 400px) {
-            margin-top: 400px;
-        }
         
         .title {
             span{
@@ -123,77 +119,19 @@
             }
 
             p{
+                margin-bottom: 15px;
+
+                span {
+                    font-size: 1.15rem;
+                    color: $color-3;
+                    font-weight: 700;
+                }
+
+
                 @media screen and (max-width: 680px) {
                     font-size: 0.8rem;
                 }
             }
-        }
-    }
-    .more-about-container{
-        width: calc(100vw - 250px);
-
-        .more-about {
-            background-color: $black-1;
-            width: 85%;
-            margin: 100px auto 0 0;
-            padding: 15px;
-            border-radius: 0 15px 15px 0;
-            
-            .talents{
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                margin: 50px 0;
-                
-                .talent-container{
-                    background-color: $color-1;
-                    
-                    .talent {
-                        flex-direction: column;
-                        align-items: flex-start;
-                        width: 320px;
-                        padding: 22px;
-                        margin: 22px;
-                        
-                        img {
-                            height: 96px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .formations-container {
-        background-color: $black-1;
-        padding: 15px;
-        margin: 100px 0;
-        
-        .formations {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-around;
-
-            .left-formation {
-                margin-top: 50px;
-                display: flex;
-                flex-direction: column;
-                gap: 50px;
-                
-                .formation {
-                    box-shadow: rgba(255, 255, 255, 0.795) 0px 4px 4px 0px;
-                    // box-shadow: rgba(244, 169, 73, 0.1) 0px 4px 4px 0px;
-                    border-radius: 8px;
-                    color: $white-1;
-                    width: 400px;
-                    padding: 30px;
-                    // margin: 50px 0 0 0;
-                }
-
-            }
-            .right-formation {
-                width: 40%;
-            }
-
         }
     }
 }

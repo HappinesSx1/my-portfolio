@@ -1,0 +1,57 @@
+.formations-container {
+    
+    .formations-section {
+        
+        background-color: $black-1;
+        padding: 15px;
+        margin: 100px 0;
+        
+        .formations {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            .left-formation {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                
+                .formation {
+                    box-shadow: rgba(255, 255, 255, 0.795) 0px 4px 4px 0px;
+                    // box-shadow: rgba(244, 169, 73, 0.1) 0px 4px 4px 0px;
+                    border-radius: 8px;
+                    color: $white-1;
+                    width: 400px;
+                    padding: 30px;
+                    // margin: 50px 0 0 0;
+                    @media screen and (max-width: 1260px) {
+                        width: 100%;
+                    }
+                }
+                @media screen and (max-width: 1260px) {
+                    width: 100%;
+                    align-items: center;
+                }
+            }
+            .right-formation {
+                width: 40%;
+                
+                @media screen and (max-width: 1260px) {
+                    display: none;
+                }
+            }
+            
+        }
+        @media screen and (max-width: 1260px) {
+            padding: 15px 50px;
+        }
+        @media screen and (max-width: 900px) {
+            margin: 0 auto;
+            width: 85%;
+        }
+        @media screen and (max-width: 450px) {
+            padding: 0;
+        }
+    }
+}
