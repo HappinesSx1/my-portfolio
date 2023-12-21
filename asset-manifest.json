@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.eaebf809.css",
-    "main.js": "/my-portfolio/static/js/main.3af6d7b1.js",
-    "static/media/projet1-small-picture.png": "/my-portfolio/static/media/projet1-small-picture.18c465beeef88af09c06.png",
-    "static/media/projet2-small-picture.png": "/my-portfolio/static/media/projet2-small-picture.9f0d4af002570fa83ff2.png",
-    "static/media/projet4-small-picture.png": "/my-portfolio/static/media/projet4-small-picture.b1b9aa50535e5d0cc31a.png",
+    "main.css": "/my-portfolio/static/css/main.d590a19d.css",
+    "main.js": "/my-portfolio/static/js/main.a41cd6a6.js",
     "static/media/Ordinateur.png": "/my-portfolio/static/media/Ordinateur.939937bf600338c72e3d.png",
-    "static/media/projet3-small-picture.png": "/my-portfolio/static/media/projet3-small-picture.fc80590e367bf259dac5.png",
     "static/media/JetBrainsMono-VariableFont_wght.ttf": "/my-portfolio/static/media/JetBrainsMono-VariableFont_wght.d08f929cab66fc19b568.ttf",
     "static/media/knowledge.svg": "/my-portfolio/static/media/knowledge.7094f3d01564bbbbfbe215f743453d76.svg",
     "static/media/Emails-bro.svg": "/my-portfolio/static/media/Emails-bro.c97850813d6e33ae303ef63edb5b2349.svg",
     "static/media/Research paper-rafiki.svg": "/my-portfolio/static/media/Research paper-rafiki.8e8da25e2617986b2104462030919d03.svg",
     "static/media/landing_page.svg": "/my-portfolio/static/media/landing_page.93592e9c54bbf3590c5bf858ae41660c.svg",
+    "static/media/projet4-presentation-picture.webp": "/my-portfolio/static/media/projet4-presentation-picture.55aeb5efcede05e16d3d.webp",
+    "static/media/projet1-presentation-picture.webp": "/my-portfolio/static/media/projet1-presentation-picture.8b25bd7411cbb15d0d21.webp",
     "static/media/logo.png": "/my-portfolio/static/media/logo.f9f09487de0d661103b3.png",
+    "static/media/projet2-presentation-picture.webp": "/my-portfolio/static/media/projet2-presentation-picture.8feb80c91c76fe89356c.webp",
+    "static/media/projet3-presentation-picture.webp": "/my-portfolio/static/media/projet3-presentation-picture.9cb61fc8a9e0f46b2133.webp",
     "static/media/logo-sass.svg": "/my-portfolio/static/media/logo-sass.1ce5df5d9a2225dd92cc56f352f2c12c.svg",
     "static/media/react-logo.svg": "/my-portfolio/static/media/react-logo.898b57a519fdd4b5fc697d389431c2b3.svg",
     "static/media/layered.svg": "/my-portfolio/static/media/layered.19dfebd7bc2cedf2305f.svg",
@@ -26,11 +26,11 @@
     "static/media/logo-git.svg": "/my-portfolio/static/media/logo-git.fec74cc92a68a9713cd4a07281ef92fd.svg",
     "static/media/bg-portfolio.svg": "/my-portfolio/static/media/bg-portfolio.5809b0eb835a9f9df6da.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.eaebf809.css.map": "/my-portfolio/static/css/main.eaebf809.css.map",
-    "main.3af6d7b1.js.map": "/my-portfolio/static/js/main.3af6d7b1.js.map"
+    "main.d590a19d.css.map": "/my-portfolio/static/css/main.d590a19d.css.map",
+    "main.a41cd6a6.js.map": "/my-portfolio/static/js/main.a41cd6a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.eaebf809.css",
-    "static/js/main.3af6d7b1.js"
+    "static/css/main.d590a19d.css",
+    "static/js/main.a41cd6a6.js"
   ]
 }
