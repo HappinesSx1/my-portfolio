@@ -5,20 +5,27 @@ body.active-modal {
 .project-containeur{
     background-color: $black-1;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 30% 70%;
+    // display: grid;
+    // grid-template-columns: 30% 70%;
     align-items: center;
     font-family: $font-1;
+    display: flex;
 
     @media screen and (max-width: 900px) {
-        grid-template-columns: 1fr;
-      }
+        flex-direction: column;
+        justify-content: center;
+    }
+    @media screen and (max-width: 440px) {
+        flex-direction: column-reverse;
+    }
+    
 
     
     .containeur-left {
         @include verticalCenter;
         flex-direction: column;
         color: $white-1;
+        width: 30%;
 
             .description {
                 font-size: 1.15rem;
@@ -37,6 +44,9 @@ body.active-modal {
                 font-size: 0.75rem;
                 display: flex;
                 margin-top: 30px;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5px;
 
                 li {
                     background-color: rgba(45,212,191,.1);
@@ -73,7 +83,9 @@ body.active-modal {
             }
         
         @media screen and (max-width: 900px) {
-                margin-top: 50px;
+            margin-top: 50px;
+            width: 100%;
+
         }
 
     
@@ -83,6 +95,7 @@ body.active-modal {
     .containeur-right {
         position: relative;
         @include verticalCenter;
+        width: 70%;
 
         .zoom-here {
             height: 150px;
@@ -111,6 +124,28 @@ body.active-modal {
 
             @media screen and (max-width: 900px) {
                 box-shadow: 6px 6px 50px $white-1, -6px -6px 50px $white-1;
+                width: 100%;
+            }
+            @media screen and (max-width: 440px) {
+                box-shadow: 3px 3px 25px $white-1, -3px -3px 25px $white-1;
+            }
+        }
+
+        .arrows {
+            position: absolute;
+            left: 50%;
+            bottom: -100px;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 10px;
+            
+            .arrow {
+                background-color: $color-3;
+                padding: 10px 15px;
+                font-size: 1.5rem;
+                @include verticalCenter;
+                border-radius: 50%;
+                cursor: pointer;
             }
         }
 
@@ -119,10 +154,10 @@ body.active-modal {
         }
 
         @media screen and (max-width: 900px) {
-            margin-top: -150px;
+            margin-top: 50px;
           }
         @media screen and (max-width: 440px) {
-            display: none;
+            margin: 0;
           }
 
     }

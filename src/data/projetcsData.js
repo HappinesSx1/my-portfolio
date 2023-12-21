@@ -5,8 +5,8 @@ export const projectsData = [
     lien: "https://github.com/HappinesSx1/projet1-resto.git",
     description:
       "Site single page, de présentation et d'exposition d'un restaurant avec un design très sobre.",
-    smallPicture: "/projet1-small-picture.png",
-    bigPicture: "/projet1-big-picture.png",
+    smallPicture: ["/projet1-small-picture2.jpg"],
+    bigPicture: "/projet1-big-picture3.webp",
   },
   {
     id: "2",
@@ -14,8 +14,8 @@ export const projectsData = [
     lien: "https://github.com/HappinesSx1/projet2-gaming-campus",
     description:
       "Site single page, de présentation et d'exposition d'une formation au gaming/business en relation avec ce milieu.",
-    smallPicture: "/projet2-small-picture.png",
-    bigPicture: "/projet2-big-picture.png",
+    smallPicture: ["/projet2-small-picture2.jpg"],
+    bigPicture: "/projet2-big-picture3.webp",
   },
   {
     id: "3",
@@ -23,7 +23,7 @@ export const projectsData = [
     lien: "https://github.com/HappinesSx1/crypto-view",
     description:
       "Site regroupant les plus importants coin et tous leurs actifs, avec une page principale et un système de favoris avec redux.",
-    smallPicture: "/projet3-small-picture.png",
+    smallPicture: ["/projet3-small-picture2.jpg"],
     bigPicture: null,
   },
   {
@@ -32,7 +32,11 @@ export const projectsData = [
     lien: "https://github.com/HappinesSx1/Kasa-p8",
     description:
       "Site de reservation d'appartements, avec deux pages principales et plusieurs pages, une pour chaque appartement.",
-    smallPicture: "/projet4-small-picture.png",
-    bigPicture: "/projet4-big-picture.png",
+    smallPicture: [
+      "/projet4-small-picture2.jpg",
+      "/projet3-small-picture2.jpg",
+    ],
+    // smallPicture: "/projet4-small-picture2.jpg",
+    bigPicture: "/projet4-big-picture3.webp",
   },
 ];

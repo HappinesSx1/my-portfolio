@@ -7,6 +7,7 @@ import { projectsData } from "../data/projetcsData";
 const Projet = () => {
   const { id } = useParams();
   const [modal, setModal] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const toggleModal = () => {
     setModal(!modal);
@@ -21,15 +22,21 @@ const Projet = () => {
   // Data récuperé depuis le fichier portfolio.json
   const dataDetails = projectsData.find((data) => data.id === id);
 
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === dataDetails.smallPicture.length - 1 ? 0 : prevSlide + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 0 ? dataDetails.smallPicture.length - 1 : prevSlide - 1
+    );
+  };
   return (
     <>
       <ReturnBtn />
       <div className="project-containeur">
-        {/* {dataDetails.bigPicture === null ? (
-          ""
-        ) : (
-          <span className="zoom-here">Zoom here →</span>
-        )} */}
         <div className="containeur-left">
           <h2 className="description">Description:</h2>
           <p className="description-p">{dataDetails.description}</p>
@@ -53,11 +60,23 @@ const Projet = () => {
             <span className="zoom-here">Zoom here →</span>
           )}
           <img
-            src={`${process.env.PUBLIC_URL}/img${dataDetails.smallPicture}`}
+            src={`${process.env.PUBLIC_URL}/img${dataDetails.smallPicture[currentSlide]}`}
             alt="test"
             onClick={toggleModal}
             id={dataDetails.bigPicture === null ? "no-modal" : ""}
           />
+          {dataDetails.smallPicture.length === 1 ? (
+            ""
+          ) : (
+            <div className="arrows">
+              <span className="left-arrow arrow" onClick={prevSlide}>
+                ←
+              </span>
+              <span className="right-arrow arrow" onClick={nextSlide}>
+                →
+              </span>
+            </div>
+          )}
         </div>
         {dataDetails.bigPicture === null
           ? ""
