@@ -11,13 +11,12 @@ const Projet = () => {
 
   const toggleModal = () => {
     setModal(!modal);
+    if (modal) {
+      document.body.classList.add("active-modal");
+    } else {
+      document.body.classList.remove("active-modal");
+    }
   };
-
-  if (modal) {
-    document.body.classList.add("active-modal");
-  } else {
-    document.body.classList.remove("active-modal");
-  }
 
   // Data récuperé depuis le fichier portfolio.json
   const dataDetails = projectsData.find((data) => data.id === id);
@@ -33,6 +32,7 @@ const Projet = () => {
       prevSlide === 0 ? dataDetails.smallPicture.length - 1 : prevSlide - 1
     );
   };
+
   return (
     <>
       <ReturnBtn />
@@ -54,7 +54,7 @@ const Projet = () => {
           </p>
         </div>
         <div className="containeur-right">
-          {dataDetails.bigPicture === null ? (
+          {dataDetails.bigPicture[currentSlide] === null ? (
             ""
           ) : (
             <span className="zoom-here">Zoom here →</span>
