@@ -128,7 +128,9 @@ body.active-modal {
             }
             @media screen and (max-width: 440px) {
                 box-shadow: 3px 3px 25px $white-1, -3px -3px 25px $white-1;
+                margin-bottom: 50px;
             }
+
         }
 
         .arrows {
@@ -146,8 +148,13 @@ body.active-modal {
                 @include verticalCenter;
                 border-radius: 50%;
                 cursor: pointer;
+                user-select: none;
+            }
+            @media screen and (max-width: 440px) {
+                bottom: -50px;
             }
         }
+    
 
         #no-modal {
             cursor: auto;

@@ -62,8 +62,11 @@ const Projet = () => {
           <img
             src={`${process.env.PUBLIC_URL}/img${dataDetails.smallPicture[currentSlide]}`}
             alt="test"
-            onClick={toggleModal}
-            id={dataDetails.bigPicture === null ? "no-modal" : ""}
+            onClick={
+              dataDetails.bigPicture[currentSlide] === null ? null : toggleModal
+            }
+            // onClick={toggleModal}
+            id={dataDetails.bigPicture[currentSlide] === null ? "no-modal" : ""}
           />
           {dataDetails.smallPicture.length === 1 ? (
             ""
@@ -78,14 +81,14 @@ const Projet = () => {
             </div>
           )}
         </div>
-        {dataDetails.bigPicture === null
+        {dataDetails.bigPicture[currentSlide] === null
           ? ""
           : modal && (
               <div className="modal">
                 <div onClick={toggleModal} className="overlay"></div>
                 <div className="modal-content">
                   <img
-                    src={`${process.env.PUBLIC_URL}/img${dataDetails.bigPicture}`}
+                    src={`${process.env.PUBLIC_URL}/img${dataDetails.bigPicture[currentSlide]}`}
                     alt=""
                   />
                   <button className="close-modal" onClick={toggleModal}>

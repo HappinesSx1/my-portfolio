@@ -21,7 +21,7 @@ const Formations = () => {
               <h5>2021-20~</h5>
             </div>
             <div className="formation">
-              <h4>Fromation intégrateur web, openclassroom</h4>
+              <h4>Formation intégrateur web, openclassroom</h4>
               <h5>2022-2023</h5>
             </div>
           </div>
