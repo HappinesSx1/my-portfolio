@@ -37,6 +37,15 @@ export const projectsData = [
       "/projet4-small-picture2.png",
       "/projet4-small-picture3.png",
     ],
-    bigPicture: ["/projet4-big-picture3.webp", null, null],
+    bigPicture: ["/projet4-big-picture3.webp"],
+  },
+  {
+    id: "5",
+    tags: ["HTML", "CSS", "JS"],
+    lien: "https://github.com/HappinesSx1/Print-it-slider",
+    description:
+      "Site d'une entreprise d'impréssions (Print it!) avec un carrousselle fonctionnelle et automatique.",
+    smallPicture: ["/projet5-small-picture.webp"],
+    bigPicture: ["/projet5-big-picture.webp"],
   },
 ];
