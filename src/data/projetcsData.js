@@ -3,8 +3,8 @@ export const projectsData = [
     id: "1",
     tags: ["HTML", "SASS", "Javascript"],
     lien: "https://github.com/HappinesSx1/projet1-resto.git",
-    description:
-      "Site single page, de présentation et d'exposition d'un restaurant avec un design très sobre.",
+    // description:
+    //   "Site single page, de présentation et d'exposition d'un restaurant avec un design très sobre.",
     smallPicture: ["/projet1-small-picture.jpg"],
     bigPicture: ["/projet1-big-picture3.webp"],
   },

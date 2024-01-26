@@ -3,8 +3,10 @@ import { NavLink } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 import emailpicture from "../assets/images/section-contact/Emails-bro.svg";
 import GithubBtn from "../components/GithubBtn";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Sidebar />
@@ -13,11 +15,7 @@ const Contact = () => {
         <div className="containeur">
           <div className="left-containeur">
             <div className="mail">
-              <p>
-                Avez-vous besoin d'un développer web? <br />
-                Voulez-vous lancer un nouveau projet? <br />
-                Vous pouvez me contacter à cette adresse mail ci-dessous:
-              </p>
+              <p>{t("contact.text")}</p>
               <h1>
                 <NavLink to="mailto:david.b57970@gmail.com">
                   david.b57970@gmail.com

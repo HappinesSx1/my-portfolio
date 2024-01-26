@@ -3,11 +3,13 @@ import ReturnBtn from "../components/ReturnBtn";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import { NavLink, useParams } from "react-router-dom";
 import { projectsData } from "../data/projetcsData";
+import { useTranslation } from "react-i18next";
 
 const Projet = () => {
   const { id } = useParams();
   const [modal, setModal] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const { t } = useTranslation();
 
   const toggleModal = () => {
     setModal(!modal);
@@ -20,6 +22,8 @@ const Projet = () => {
 
   // Data récuperé depuis le fichier portfolio.json
   const dataDetails = projectsData.find((data) => data.id === id);
+
+  console.log(dataDetails);
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) =>
@@ -38,10 +42,11 @@ const Projet = () => {
       <ReturnBtn />
       <div className="project-containeur">
         <div className="containeur-left">
-          <h2 className="description">Description:</h2>
-          <p className="description-p">{dataDetails.description}</p>
-
-          <h2 className="description">Technologies utilisées:</h2>
+          <h2 className="description">{t("project.description")}</h2>
+          {/* <p className="description-p">{dataDetails.description}</p> */}
+          <p className="description-p">{t(`projects.${id}.description`)}</p>
+          {/* <h2 className="description">Technologies utilisées:</h2> */}
+          <h2 className="description">{t("project.technologies")}</h2>
           <ul>
             {dataDetails.tags.map((tag, index) => (
               <li key={index}>{tag}</li>
@@ -49,7 +54,8 @@ const Projet = () => {
           </ul>
           <p className="code-btn">
             <NavLink to={dataDetails.lien} target="_blank">
-              Voir le code <ArrowForwardIosIcon className="arrow-btn" />
+              {t("project.code")}
+              <ArrowForwardIosIcon className="arrow-btn" />
             </NavLink>
           </p>
         </div>

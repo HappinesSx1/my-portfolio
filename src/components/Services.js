@@ -1,37 +1,33 @@
 import React from "react";
 import img1 from "../assets/images/section-about/landing_page.svg";
 import img2 from "../assets/images/section-about/knowledge.svg";
+import { useTranslation } from "react-i18next";
+import enTranslations from "../locales/en.json";
+import frTranslations from "../locales/fr.json";
 
 const Services = () => {
-  const dataServices = [
-    {
-      title: "Applications",
-      image: img1,
-      imageAlt: "Exemple d'un site web",
-      description:
-        "Intégrations de maquettes, et/ou d'options de connexion d'utilisateur.",
-    },
-    {
-      title: "Optimisations",
-      image: img2,
-      imageAlt: "Explosions d'idées dans la tête",
-      description:
-        "Opatimisation d'un site web pour augmenter ses perfomances, le nombre de visiteurs et un code plus sain.",
-    },
-  ];
+  const { t, i18n } = useTranslation();
+  const dataServices =
+    i18n.language === "fr"
+      ? frTranslations.services.data
+      : enTranslations.services.data;
 
   return (
     <section className="more-about-container">
       <div className="more-about">
-        <h2 className="section-h2">Mes services</h2>
+        <h2 className="section-h2">{t("services.title")}</h2>
         <div className="talents">
           {dataServices.map((service, index) => (
             <div className="talent-container" key={index}>
               <div className="talent">
-                <img src={service.image} alt={service.imageAlt} />
+                {service.img === "img1" ? (
+                  <img src={img1} alt={service.imgAlt} />
+                ) : (
+                  <img src={img2} alt={service.imgAlt} />
+                )}
                 <div className="talent-description">
                   <h3>{service.title}</h3>
-                  <p>{service.description}</p>
+                  <p>{service.text}</p>
                 </div>
               </div>
             </div>

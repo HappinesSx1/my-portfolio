@@ -10,7 +10,8 @@ const Portfolio = () => {
       <div className="main-portfolio">
         <div className="containeur">
           <div className="title">
-            <span>T</span>
+            <h1>TOUS MES PROJETS :</h1>
+            {/* <span>T</span>
             <span>O</span>
             <span>U</span>
             <span>S</span>
@@ -27,7 +28,7 @@ const Portfolio = () => {
             <span>T</span>
             <span>S</span>
             <span> </span>
-            <span>:</span>
+            <span>:</span> */}
           </div>
           <ul className="projets">
             {projectsData.map((carte) => (

@@ -1,0 +1,71 @@
+{
+    "welcome": "Change the language :",
+    "sidebar": {
+      "home": "Home",
+      "about": "About me"
+    },
+    "home": {
+      "h1": "Hello, welcome on my Porfolio!",
+      "about": "About me"
+    },
+    "about" : {
+      "title" : "My main area of expertise is front-end development (client side of the website).",
+      "profile" : "My name is David BARTHELEMY, and I'm a front-end developer based near Metz, in Moselle (57). I've been involved in web development for several years now, first in parallel with my studies, then with openclassroom training. See all the projects I've worked on in the section:",
+      "moreAbout" : "HTML, CSS, JS, SASS, construction de petites et moyennes applications web avec React, fonctionnalités, animations, et codage de mises en page interactives. J'ai également quelques bases avec l'outil WordPress."
+    },
+    "formation" : {
+      "title" : "My Qualifications",
+      "data": [
+        {
+          "title": "Bachelor's degree (high school)",
+          "year": "2018-2019"
+        },
+        {
+          "title": "Computer science license (first year validated)",
+          "year": "2019-2022"
+        },
+        {
+          "title": "Self-learning web development",
+          "year": "2021-aujourd'hui"
+        },
+        {
+          "title": "Web integrator training, Openclassroom (level 5 qualification)",
+          "year": "2022-2023"
+        }
+      ]
+    },
+    "services" : {
+      "title" : "My services",
+      "data" : [
+        {
+          "title" : "Applications",
+          "text" : "Integration of mock-ups and/or user connection options.",
+          "img" : "img1",
+          "imgAlt" : "Exemple of a web site"
+        },
+        {
+          "title" : "Optimisations",
+          "text" : "Optimization of a website to increase its performance, number of visitors and healthier code.",
+          "img" : "img2",
+          "imgAlt" : "Explosions of idea"
+        }
+      ]
+    },
+    "contact" : {
+      "text" : "Do you need web development? Do you want to launch a new project? You can contact me at the email address below:"
+    },
+    "project" : {
+      "technologies" : "Technologies used :",
+      "description" : "Description :",
+      "code" : "view code"
+    },
+    "projects": {
+      "1": {
+        "description": "Single-page restaurant presentation and exhibition site with a very sober design."
+      },
+      "2": {
+        "description": "Single-page site, presenting and exhibiting a gaming/business training course related to this field."
+      }
+    }
+}
+  

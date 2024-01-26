@@ -5,8 +5,11 @@ import Sidebar from "../components/Sidebar";
 import GithubBtn from "../components/GithubBtn";
 import Services from "../components/Services";
 import Formations from "../components/Formations";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Sidebar />
@@ -36,26 +39,12 @@ const About = () => {
           </div>
 
           <div className="experience-text">
-            <h2>
-              Mon principal domaine d'expertise est le Front end développement
-              (côté client du site web).
-            </h2>
-
+            <h2>{t("about.title")}</h2>
             <p>
-              Je m'appelle David BARTHELEMY, je suis un développeur front basé
-              proche de Metz, en Moselle (57). Déjà plusieurs années que je suis
-              investi dans le développement web, d'abord en parallèle de mes
-              études puis avec une formation openclassroom. Découvrez tous les
-              projets sur lesquels j'ai travaillé dans la section:
-              <span> Portfolio</span>.
+              {t("about.profile")} <span> Portfolio</span>.
             </p>
 
-            <p>
-              HTML, CSS, JS, SASS, construction de petites et moyennes
-              applications web avec React, fonctionnalités, animations, et
-              codage de mises en page interactives. J'ai également quelques
-              bases avec l'outil WordPress.
-            </p>
+            <p>{t("about.moreAbout")}</p>
           </div>
 
           <Languages />

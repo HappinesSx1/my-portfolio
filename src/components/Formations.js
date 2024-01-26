@@ -1,29 +1,20 @@
 import React from "react";
 import img3 from "../assets/images/section-about/Research paper-rafiki.svg";
+import { useTranslation } from "react-i18next";
+import enTranslations from "../locales/en.json";
+import frTranslations from "../locales/fr.json";
 
 const Formations = () => {
-  const dataFormations = [
-    {
-      title: "Baccalauréat Scientifique",
-      year: "2018-2019",
-    },
-    {
-      title: "Licence informatique (1er année validée)",
-      year: "2019-2022",
-    },
-    {
-      title: "Auto apprentissage du développemnt web",
-      year: "2021-maintenat",
-    },
-    {
-      title: "Formation intégrateur web, openclassroom",
-      year: "2022-2023",
-    },
-  ];
+  const { t, i18n } = useTranslation();
+  const dataFormations =
+    i18n.language === "fr"
+      ? frTranslations.formation.data
+      : enTranslations.formation.data;
+
   return (
     <section className="formations-container">
       <div className="formations-section">
-        <h2 className="section-h2">Mes formations</h2>
+        <h2 className="section-h2">{t("formation.title")}</h2>
         <div className="formations">
           <div className="left-formation">
             {dataFormations.map((formation, index) => (

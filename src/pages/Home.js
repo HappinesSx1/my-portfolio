@@ -5,8 +5,10 @@ import ContactBtn from "../components/ContactBtn";
 import Pcimage from "../assets/images/section-home/Ordinateur.png";
 import Sidebar from "../components/Sidebar";
 import GithubBtn from "../components/GithubBtn";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Sidebar />
@@ -15,9 +17,9 @@ const Home = () => {
         <GithubBtn />
         <div className="hero">
           <div className="left-hero">
-            <h1>Bonjour, bienvenue sur mon Portfolio!</h1>
+            <h1>{t("home.h1")}</h1>
             <NavLink to="/a-propos" className="about-btn">
-              A propos de moi
+              {t("home.about")}
               <ArrowForwardIosIcon className="arrow-btn" />
             </NavLink>
           </div>
