@@ -2,15 +2,17 @@ import React from "react";
 import { projectsData } from "../data/projetcsData";
 import Card from "../components/Card";
 import Sidebar from "../components/Sidebar";
+import { useTranslation } from "react-i18next";
 
 const Portfolio = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Sidebar />
       <div className="main-portfolio">
         <div className="containeur">
           <div className="title">
-            <h1>TOUS MES PROJETS :</h1>
+            <h1>{t("portfolio.title")}</h1>
             {/* <span>T</span>
             <span>O</span>
             <span>U</span>

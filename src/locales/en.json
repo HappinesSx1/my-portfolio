@@ -52,7 +52,10 @@
       ]
     },
     "contact" : {
-      "text" : "Do you need web development? Do you want to launch a new project? You can contact me at the email address below:"
+      "text" : "Do you need a web developer? Do you want to launch a new project? You can contact me at the email address below:"
+    },
+    "portfolio" : {
+      "title" : "ALL MY PROJECTS :"
     },
     "project" : {
       "technologies" : "Technologies used :",

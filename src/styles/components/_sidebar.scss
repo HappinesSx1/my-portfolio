@@ -76,12 +76,13 @@
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 width: 95%;
             }
-            
+            @media screen and (max-width: 580px) {
+                width: 100%;
+            }
             
             @media screen and (max-width: 400px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                width: 100%;
             }
         }
 
@@ -100,10 +101,10 @@
                 padding: 0;
             }
 
-            @media screen and (max-width: 400px) {
+            @media screen and (max-width: 580px) {
                 position: absolute;
-                bottom: -30px;
-                right: 0;
+                bottom: -40px;
+                right: 15px;
             }
 
             .dropdown {

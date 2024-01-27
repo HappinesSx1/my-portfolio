@@ -51,13 +51,16 @@
         }
       ]
     },
+    "portfolio" : {
+      "title" : "TOUS MES PROJETS :"
+    },
     "project" : {
       "technologies" : "Technologies utilisées : ",
       "description" : "Description :",
       "code" : "voir le code"
     },
     "contact" : {
-      "text" : "Avez-vous besoin d'un développer web? Voulez-vous lancer un nouveau projet? Vous pouvez me contacter à cette adresse mail ci-dessous:"
+      "text" : "Avez-vous besoin d'un développeur web? Voulez-vous lancer un nouveau projet? Vous pouvez me contacter à cette adresse mail ci-dessous:"
     },
     "projects": {
       "1": {
