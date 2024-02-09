@@ -63,10 +63,14 @@ body.active-modal {
 
                 margin-top: 100px;
                 cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
                 transition: all .3s ease;
 
                 @media screen and (max-width: 900px) {
                     margin-top: 50px;
+                    flex-direction: row;
                   }
                 
                 a {
@@ -77,8 +81,9 @@ body.active-modal {
                     transition: all .3s ease;
                     height: 14px;
                 }
-                &:hover .arrow-btn {
-                    transform: rotate(90deg);
+                
+                a:hover > .arrow-btn {
+                    transform: rotate(90deg); 
                 }
             }
         

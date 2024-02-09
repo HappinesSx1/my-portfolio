@@ -68,6 +68,15 @@
       },
       "2": {
         "description": "Site single page, de présentation et d'exposition d'une formation au gaming/business en relation avec ce milieu."
+      },
+      "3": {
+        "description": "Site regroupant les plus importants coin et tous leurs actifs, avec une page principale et un système de favoris avec redux."
+      },
+      "4": {
+        "description": "Site de reservation d'appartements, avec deux pages principales et plusieurs pages, une pour chaque appartement."
+      },
+      "5": {
+        "description": "Site d'une entreprise d'impréssions (Print it!) avec un carrousselle fonctionnelle et automatique."
       }
     }
 }

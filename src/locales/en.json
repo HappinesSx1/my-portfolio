@@ -68,6 +68,15 @@
       },
       "2": {
         "description": "Single-page site, presenting and exhibiting a gaming/business training course related to this field."
+      },
+      "3": {
+        "description": "Site bringing together the most important corners and all their assets, with a main page and a favorites system with redux."
+      },
+      "4": {
+        "description": "Apartment booking site, with two main pages and several pages, one for each apartment."
+      },
+      "5": {
+        "description": "Print it! website with a functional and automatic carousel."
       }
     }
 }

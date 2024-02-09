@@ -52,12 +52,20 @@ const Projet = () => {
               <li key={index}>{tag}</li>
             ))}
           </ul>
-          <p className="code-btn">
+          <div className="code-btn">
             <NavLink to={dataDetails.lien} target="_blank">
               {t("project.code")}
-              <ArrowForwardIosIcon className="arrow-btn" />
+              <ArrowForwardIosIcon className="arrow-btn arrow-1" />
             </NavLink>
-          </p>
+            {dataDetails.webLink === "" ? (
+              ""
+            ) : (
+              <NavLink to={dataDetails.webLink} target="_blank">
+                Website
+                <ArrowForwardIosIcon className="arrow-btn arrow-2" />
+              </NavLink>
+            )}
+          </div>
         </div>
         <div className="containeur-right">
           {dataDetails.bigPicture[currentSlide] === null ? (
