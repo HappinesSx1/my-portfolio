@@ -9,10 +9,9 @@ import Projet from "./pages/Projet";
 const App = () => {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/my-portfolio">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/my-portoflio" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/a-propos" element={<About />} />
           <Route path="/contact" element={<Contact />} />

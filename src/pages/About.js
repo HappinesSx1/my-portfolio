@@ -17,6 +17,7 @@ const About = () => {
         <ContactBtn />
         <GithubBtn />
         <div className="content-containeur">
+          <span className="Over-here">Over here →</span>
           <div className="title">
             <span>S</span>
             <span>k</span>

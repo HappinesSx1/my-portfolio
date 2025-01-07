@@ -16,10 +16,19 @@
         flex-direction: column;
         text-align: center;
         padding-top: 150px;
+        position: relative;
 
         @media screen and (max-width: 900px) {
             @include verticalCenter;
             flex-direction: column;
+        }
+
+        .Over-here {
+            position:absolute;
+            left: 25%;
+            top: 0;
+            padding-top: 120px;
+            transform: rotate(25deg);
         }
         
         .title {
